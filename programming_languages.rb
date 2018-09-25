@@ -20,6 +20,6 @@ def reformat_languages(languages)
       languages[:functional][:scala][:style] = [:functional]
     end
   end
-  new_hash = languages[:oo] + languages[:functional]
+  new_hash = languages[:functional]
   new_hash
 end
