@@ -5,7 +5,7 @@ def reformat_languages(languages)
       :oo[:ruby] = {style: "oo" }
     end
   end
-  
+  new_hash << languages[:oo][:ruby]
   
   
   new_hash
