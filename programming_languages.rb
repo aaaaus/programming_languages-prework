@@ -11,6 +11,9 @@ def reformat_languages(languages)
       languages[:oo][:java][:style] = [:oo]
     end
   end
+  languages[:functional].keys.each do |key|
+    if key == :clojure
+      languages[:functional][:clojure]
   new_hash = languages[:oo]
   new_hash
 end
