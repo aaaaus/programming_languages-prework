@@ -21,6 +21,8 @@ def reformat_languages(languages)
     end
   end
   new_hash = languages[:oo]
-  new_hash.merge(languages[:functional])
+  new_hash[:clojure] = languages[:functional][:clojure]
+  new_hash[:erlang] = languages[:functional][:erlang]
+  new_hash[:scala] = languages[:functional][:scala]
   new_hash
 end
