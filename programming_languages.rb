@@ -15,7 +15,11 @@ def reformat_languages(languages)
     if key == :clojure
       languages[:functional][:clojure][:style] = [:functional]
     elsif key == :erlang
-      languages[:functional][:clojure][:style] = [:functional]
-  new_hash = languages[:oo]
+      languages[:functional][:erlang][:style] = [:functional]
+    elsif key == :scala
+      languages[:functional][:scala][:style] = [:functional]
+    end
+  end
+  new_hash = languages[:oo] + languages[:functional]
   new_hash
 end
