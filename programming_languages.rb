@@ -13,7 +13,9 @@ def reformat_languages(languages)
   end
   languages[:functional].keys.each do |key|
     if key == :clojure
-      languages[:functional][:clojure]
+      languages[:functional][:clojure][:style] = [:functional]
+    elsif key == :erlang
+      languages[:functional][:clojure][:style] = [:functional]
   new_hash = languages[:oo]
   new_hash
 end
